@@ -1,8 +1,12 @@
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 24px; 
     color:#333;
+    
 }
 
 *,
@@ -42,7 +46,7 @@ p {
     max-width: 570px;
     font-weight: 600;
     font-size: 1.5em;
-    color: #C55F5F;
+    color: #605D82;
     padding: 1.5em;
 }
 
@@ -56,8 +60,8 @@ p {
     max-width: 570px;
     font-size: 1.5em;
     color: #fff;
-    padding: 1.5em;
-    background-color: #C55F5F;
+    padding: 1em;
+    background-color: #605D82;
 }
 
 /* Intro */
@@ -78,6 +82,7 @@ p {
     text-align: center;
     padding-top: 1em;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
 }
 .left__item__text{
     font-size: 36px;
@@ -87,10 +92,11 @@ p {
     font-size: 24px;
 }
 .color__text{
-    color:#C55F5F;
+    color:#605D82;
 }
 .intro__Img{
     position: relative;
+    
 }
 .intro__png{
     max-width: 100%;
@@ -141,7 +147,7 @@ p {
     width: 200px;
     font-size: 20px;
     color: #fff;
-    background-color: #C55F5F;
+    background-color: #605D82;
     top:calc(100% - 60px);
     min-width: 10%;
     min-height: 20%;
@@ -152,5 +158,27 @@ p {
 
 /* form */
 .form__section{
+    display: flex;
+    justify-content: center;
     text-align: center;
+
+}
+.form__div{
+    width: 500px;
+    height: 350px;
+}
+
+.btn-primary{
+    background: #3F3D56;
+    font-size: 1,5em;
+    margin-top: 0.5em;
+    width: 100%;
+}
+
+.form__title{
+    color: #333333;
+    font-size: 2em;
+}
+.form-group{
+    margin-top: 0.5em;
 }
