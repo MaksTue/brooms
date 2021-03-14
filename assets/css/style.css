@@ -65,14 +65,22 @@ p {
 }
 
 .intro__item__left{
-    width: 50%;
+    
     background-color: #FBFBFB;
-    border: 1px solid #FBFBFB;
-    box-shadow: 4 4 4px #000;
+    border: 3px solid #969696;
+    border-radius: 17px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.left__item__text{
+    font-size: 36px;
+    line-height: 1.16;
+}
+.left__item__numb{
+    font-size: 24px;
 }
 .color__text{
     color:#C55F5F;
 }
 .intro__item__right{
-    width: 50%;
+
 }
