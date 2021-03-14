@@ -16,13 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
     margin: 0;
+    padding: 0;
 }
 /* Container */
-.container {
+/* .container {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-}
+
+} */
 
 /* Header */
 .header {
@@ -41,7 +43,7 @@ p {
     font-weight: 600;
     font-size: 24px;
     color: #C55F5F;
-    padding: 24px;
+    padding: 1.5em;
 }
 
 .header__inner__left_title{
@@ -54,14 +56,18 @@ p {
     max-width: 570px;
     font-size: 24px;
     color: #fff;
-    padding: 24px;
+    padding: 1.5em;
     background-color: #C55F5F;
 }
 
 /* Intro */
+.intro{
+    margin-top: 3em;
+}
+
 .intro__inner {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 
 .intro__item__left{
@@ -69,6 +75,8 @@ p {
     background-color: #FBFBFB;
     border: 3px solid #969696;
     border-radius: 17px;
+    text-align: center;
+    padding-top: 1em;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .left__item__text{
@@ -81,6 +89,66 @@ p {
 .color__text{
     color:#C55F5F;
 }
-.intro__item__right{
+.intro__Img{
+    position: relative;
+}
+.intro__png{
+    max-width: 100%;
+}
+.eclips{
+    position: absolute;
+    max-width: 50%;
+    top:50%;
+    left:80%;
+}
 
+/* product */
+.product__titile{
+    text-align: center;
+    margin: 5em;
+}
+
+/* table */
+.table{
+    color:#353535;
+}
+
+.main__table{
+    font-size: 20px;
+}
+
+.table__title{
+    font-size: 25px;
+}
+.top__sail{
+    background-color: #000;
+}
+.tb_tr{
+    vertical-align: middle;
+}
+.text__sail{
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    background-color: #C4C4C4;
+}
+
+
+/* fixed */
+.fixed__info{
+    position: fixed;
+    text-align: center;
+    width: 16%;
+    font-size: 20px;
+    color: #fff;
+    background-color: #C55F5F;
+    top:80%;
+    left:0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* form */
+.form__section{
+    text-align: center;
 }
