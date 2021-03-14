@@ -41,7 +41,7 @@ p {
     align-items: center;
     max-width: 570px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5em;
     color: #C55F5F;
     padding: 1.5em;
 }
@@ -54,7 +54,7 @@ p {
     display: flex;
     align-items: center;
     max-width: 570px;
-    font-size: 24px;
+    font-size: 1.5em;
     color: #fff;
     padding: 1.5em;
     background-color: #C55F5F;
@@ -138,11 +138,13 @@ p {
 .fixed__info{
     position: fixed;
     text-align: center;
-    width: 16%;
+    width: 200px;
     font-size: 20px;
     color: #fff;
     background-color: #C55F5F;
-    top:80%;
+    top:calc(100% - 60px);
+    min-width: 10%;
+    min-height: 20%;
     left:0;
     right: 0;
     z-index: 1000;
