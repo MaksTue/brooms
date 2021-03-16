@@ -115,15 +115,15 @@
   </div>
   <div class="container form__section">
 
-    <form class="form__div" id="form" >
+    <form class="form__div"  action="mail.php" method="POST" >
       <div class="form__div__content">
         <div class="form__title">Оставьте свои контакты и мы свяжемся с Вами!</div>
         <div class="form-group">
-          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="text" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Email">
         </div>
         <div class="form-group">
-          <input type="tel" name="phone" id="phone" class="form-control bfh-phone mask-date" placeholder="Телефон">
+          <input type="text" name="phone" id="phone" class="form-control bfh-phone mask-date" placeholder="Телефон">
         </div>
         <button type="submit" class="btn btn-primary">Отправить</button>
       
@@ -132,6 +132,7 @@
 
   </div>
   <script src="assets/js/jquery.maskedinput.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
     $('.mask-date').mask('+7-999-99-99');
   </script>
