@@ -30,13 +30,7 @@ p {
     padding: 0;
 }
 
-/* Container */
-/* .container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
 
-} */
 
 /* Header */
 .header {
@@ -208,6 +202,16 @@ p {
     z-index: 1000;
 }
 
+.fixed__text {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fixed__text:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* form */
 .form__section {
     display: flex;
@@ -299,7 +303,7 @@ p {
     .header__inner {
         height: 130px;
     }
-    
+
     .header__inner__left_title {
         font-size: 26px;
     }
@@ -356,7 +360,8 @@ p {
     .product__titile {
         height: 150px;
     }
-    .form__div{
+
+    .form__div {
         max-width: 500px;
     }
 }
@@ -402,7 +407,7 @@ p {
 
     .eclips {
         max-width: 30%;
-        top:56%;
+        top: 56%;
         left: calc(100% - 75px);
     }
 
@@ -419,10 +424,12 @@ p {
         display: flex;
         align-items: center;
     }
-    .form__div{
+
+    .form__div {
         max-width: 450px;
     }
-    .product__titile{
+
+    .product__titile {
         height: 150px;
     }
 }
@@ -454,55 +461,65 @@ p {
 
     .eclips {
         max-width: 28%;
-        /* left: 62%; */
+        left: calc(100% - 140px);
         top: 60%;
     }
 
-.intro__inner {
-    flex-wrap: wrap;
-}
+    .intro__inner {
+        flex-wrap: wrap;
+    }
 
-.intro__item__left {
-    width: 100%;
-}
+    .intro__item__left {
+        width: 100%;
+    }
 
-.intro__item__right {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
+    .intro__item__right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
 
-.header__Price {
-    font-size: 14px;
-}
+    .header__Price {
+        font-size: 14px;
+    }
 
-.product__titile {
-    height: 100px;
-}
+    .product__titile {
+        height: 100px;
+    }
 
-.form__title {
-    font-size: 1.5em;
-}
+    .form__title {
+        font-size: 1.5em;
+    }
 
-.form__div {
-    height: 300px;
-}
+    .form__div {
+        height: 300px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
     .header__inner__right {
         font-size: 10px;
     }
+
     .header__inner__left {
         font-size: 10px;
     }
+
     .header__inner__left_title {
         font-size: 10px;
     }
-    .header__Price{
+
+    .header__Price {
         font-size: 10px;
     }
+
     .form__title {
         font-size: 1.2em;
     }
+
+    .eclips {
+        max-width: 30%;
+        left: calc(100% - 87px);
+    }
+
 }
