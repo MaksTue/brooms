@@ -162,7 +162,7 @@ p {
     font-weight: 700;
 }
 .tb_tr td{
-    max-width: 200px;
+    max-width: 350px;
 }
 .table__info{
     text-align: center;
@@ -180,13 +180,19 @@ p {
 
 .table__title {
     font-size: 25px;
+    vertical-align: baseline;
 }
-
+.table__title__col{
+    color: #353535!important;
+    font-weight: 700;
+}
 .top__sail {
     background-color: #000;
     color: #000;
 }
-
+.direct{
+    font-weight: 500;
+}
 .tb_tr {
     vertical-align: middle;
 }
@@ -196,13 +202,17 @@ p {
     justify-content: center;
     min-width: 132px;
 }
-
+.col__box{
+    max-width: 155px;
+}
 .text__sail {
     display: block;
     text-align: center;
     width: 150px;
     padding: 0.3em;
     border-radius: 5px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     background-color: #C4C4C4;
 }
 
