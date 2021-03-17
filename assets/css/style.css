@@ -262,7 +262,7 @@ p {
     height: 350px;
     display: flex;
     background-color: #FCFCFC;
-    padding: 10px;
+    padding: 50px;
     justify-content: center;
     margin-top: 20px;
     align-items: center;
@@ -366,10 +366,10 @@ input::placeholder {
         width: 50%;
     }
 
-    .form__div {
+    /* .form__div {
         max-width: 450px;
 
-    }
+    } */
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
