@@ -279,7 +279,7 @@
               <th scope="row"><img src="assets/images/image 14.png" alt=""></th>
               <td>Метла сорго с черенком </td>
               <td class=" direct">Вес:900-950г.<br>Длина рабочей части (без черенка): 45 см. <br>
-                 Диаметр черенка 25 мм.<br>
+                Диаметр черенка 25 мм.<br>
                 Высота: 130 см<br>
                 Ширина лопатки: 40 см<br>
                 Швов: 5 шт.</td>
@@ -293,7 +293,7 @@
               <th scope="row"><img src="assets/images/image 14.png" alt=""></th>
               <td>Метла сорго с черенком </td>
               <td class=" direct">Вес:900-950г.<br>Длина рабочей части (без черенка): 45 см. <br>
-                 Диаметр черенка 25 мм.<br>
+                Диаметр черенка 25 мм.<br>
                 Высота: 140 см<br>
                 Ширина лопатки: 40 см<br>
                 Швов: 5 шт.</td>
@@ -306,7 +306,7 @@
             <tr class="tb_tr table-secondary">
               <th scope="row"><img src="assets/images/image 15.png" alt=""></th>
               <td>Метла сорго "Люкс" без черенка</td>
-              <td class=" direct">Длина рабочей части (без черенка): 45 см.  <br>
+              <td class=" direct">Длина рабочей части (без черенка): 45 см. <br>
                 Ширина лопатки: 40 см<br>
                 Швов: 5 шт.</td>
               <td class="table__cent">25</td>
@@ -370,11 +370,12 @@
       <div class="form__div__content">
         <div class="form__title">Оставьте свои контакты и мы свяжемся с Вами!</div>
         <div class="form-group">
-          <input type="email" class="form-control" name="email" onchange = "myFunction()" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Email">
+          <input type="email" class="form-control" name="email" onchange="myFunction()" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="Email">
         </div>
         <div class="form-group">
-          <input type="tel" name="phone" id="phone" onchange = "myFunction()" class="form-control bfh-phone mask-date" placeholder="Телефон">
+          <input type="tel" name="phone" id="phone" onchange="myFunction()" class="form-control bfh-phone mask-date"
+            placeholder="Телефон">
         </div>
         <button type="submit" id="submit" class="btn btn-primary" disabled="disabled">Отправить</button>
 
@@ -389,42 +390,43 @@
   </script>
   <script>
     function myFunction() {
-   
-}
 
-jQuery("#submit").prop('disabled', true);
-
-var toValidate = jQuery('#exampleInputEmail1, #phone'), valid = false;
-
-toValidate.keyup(function () {
-    if (jQuery(this).val().length > 0) {
-        jQuery(this).data('valid', true);
-    } else {
-        jQuery(this).data('valid', false);
     }
 
-    // this indicates that we haven't assigned a true value to valid yet
-    var firstCheck = true;
+    jQuery("#submit").prop('disabled', true);
 
-    toValidate.each(function () {
+    var toValidate = jQuery('#exampleInputEmail1, #phone'),
+      valid = false;
+
+    toValidate.keyup(function () {
+      if (jQuery(this).val().length > 0) {
+        jQuery(this).data('valid', true);
+      } else {
+        jQuery(this).data('valid', false);
+      }
+
+      // this indicates that we haven't assigned a true value to valid yet
+      var firstCheck = true;
+
+      toValidate.each(function () {
         // if the current element is valid AND this is either the first check OR the previous checks were also valid
         if (jQuery(this).data('valid') == true && (valid || firstCheck)) {
-            valid = true;
+          valid = true;
         } else {
-            valid = false;
+          valid = false;
         }
 
         // we've assigned a value to valid, so each next time we will know to check that value in addition to the current element
         firstCheck = false;
-    });
+      });
 
-    if (valid === true) {
+      if (valid === true) {
         jQuery("#submit").prop('disabled', false);
-    } else {
+      } else {
         jQuery("#submit").prop('disabled', true);
-    }
-});
-</script>
+      }
+    });
+  </script>
 </body>
 
 </html>

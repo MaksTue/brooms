@@ -158,27 +158,34 @@ p {
     color: #353535;
     min-width: 1200px;
 }
-.tb_tr{
+
+.tb_tr {
     color: #353535;
     font-weight: 700;
 }
-.tb_tr td{
+
+.tb_tr td {
     max-width: 350px;
 }
-.table__info{
+
+.table__info {
     text-align: center;
 }
-.table-secondary{
-    color: #353535!important;
+
+.table-secondary {
+    color: #353535 !important;
 }
+
 .main__table {
     font-size: 20px;
-    
+
 }
-.caunt__broom{
+
+.caunt__broom {
     /* min-width: 110px; */
 }
-.table__cent{
+
+.table__cent {
     text-align: center;
 }
 
@@ -186,17 +193,21 @@ p {
     font-size: 25px;
     vertical-align: baseline;
 }
-.table__title__col{
-    color: #353535!important;
+
+.table__title__col {
+    color: #353535 !important;
     font-weight: 700;
 }
+
 .top__sail {
     background-color: #000;
     color: #000;
 }
-.direct{
+
+.direct {
     font-weight: 500;
 }
+
 .tb_tr {
     vertical-align: middle;
 }
@@ -206,9 +217,11 @@ p {
     justify-content: center;
     min-width: 132px;
 }
-.col__box{
+
+.col__box {
     max-width: 155px;
 }
+
 .text__sail {
     display: block;
     text-align: center;
@@ -285,7 +298,7 @@ p {
     font-weight: 700 !important;
     border: none !important;
     margin-top: 0.5em;
-    
+
     width: 100%;
 }
 
@@ -299,15 +312,17 @@ p {
     font-weight: 700;
     font-size: 1.5em;
 }
-.form-control{
-  
-    background: #F3F3F3!important;
-    border: none!important;
+
+.form-control {
+
+    background: #F3F3F3 !important;
+    border: none !important;
 }
 
 input::placeholder {
-    color: rgba(57, 57, 57, 0.27)!important;
-  }
+    color: rgba(57, 57, 57, 0.27) !important;
+}
+
 .form-group {
     margin-top: 1em;
     width: 100%;
