@@ -370,23 +370,61 @@
       <div class="form__div__content">
         <div class="form__title">Оставьте свои контакты и мы свяжемся с Вами!</div>
         <div class="form-group">
-          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+          <input type="email" class="form-control" name="email" onchange = "myFunction()" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Email">
         </div>
         <div class="form-group">
-          <input type="tel" name="phone" id="phone" class="form-control bfh-phone mask-date" placeholder="Телефон">
+          <input type="tel" name="phone" id="phone" onchange = "myFunction()" class="form-control bfh-phone mask-date" placeholder="Телефон">
         </div>
-        <button type="submit" class="btn btn-primary">Отправить</button>
+        <button type="submit" id="submit" class="btn btn-primary" disabled="disabled">Отправить</button>
 
       </div>
     </form>
 
   </div>
   <script src="assets/js/jquery.maskedinput.min.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script>
     $('.mask-date').mask('+7-999-999-99-99');
   </script>
+  <script>
+    function myFunction() {
+   
+}
+
+jQuery("#submit").prop('disabled', true);
+
+var toValidate = jQuery('#exampleInputEmail1, #phone'), valid = false;
+
+toValidate.keyup(function () {
+    if (jQuery(this).val().length > 0) {
+        jQuery(this).data('valid', true);
+    } else {
+        jQuery(this).data('valid', false);
+    }
+
+    // this indicates that we haven't assigned a true value to valid yet
+    var firstCheck = true;
+
+    toValidate.each(function () {
+        // if the current element is valid AND this is either the first check OR the previous checks were also valid
+        if (jQuery(this).data('valid') == true && (valid || firstCheck)) {
+            valid = true;
+        } else {
+            valid = false;
+        }
+
+        // we've assigned a value to valid, so each next time we will know to check that value in addition to the current element
+        firstCheck = false;
+    });
+
+    if (valid === true) {
+        jQuery("#submit").prop('disabled', false);
+    } else {
+        jQuery("#submit").prop('disabled', true);
+    }
+});
+</script>
 </body>
 
 </html>
