@@ -163,7 +163,9 @@ p {
     color: #353535;
     font-weight: 700;
 }
-
+.img__center{
+    text-align: center;
+}
 .tb_tr td {
     max-width: 350px;
 }
